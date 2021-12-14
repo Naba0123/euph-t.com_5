@@ -1,0 +1,165 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku  Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+/*  background-color: mintcream;*/
+  
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-drag:none;
+  -khtml-user-drag:none;
+}
+
+h1 {
+  letter-spacing: 0.15em;
+  font-size: x-large;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.background-gradient {
+  background: white;
+	background: -moz-linear-gradient(top, aliceblue, lightsteelblue);
+	background: -webkit-linear-gradient(top, aliceblue, lightsteelblue);
+	/*標準型（方向は省略＿デフォルトの to bottom になる）*/
+	background: linear-gradient(aliceblue, lightsteelblue);
+  background-attachment: fixed !important;
+}
+.container-bg {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.vertical-center {
+  /* Fallback for vh unit */
+  min-height: 100%;
+  /* You might also want to use 'height' property instead.
+     Note that for percentage values of 'height' or 'min-height' properties,
+     the 'height' of the parent element should be specified explicitly.
+     In this case the parent of '.vertical-center' is the <body> element */
+  min-height: 100vh; 
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+  -webkit-align-items : center;
+       -moz-box-align : center;
+       -ms-flex-align : center;
+          align-items : center;
+  /* In legacy web browsers such as Firefox 9 we need to specify the width of the flex container */
+  width: 100%;
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+     Therefore, we should use the following declarations to get it centered again */
+         -webkit-box-pack : center;
+            -moz-box-pack : center;
+            -ms-flex-pack : center;
+  -webkit-justify-content : center;
+          justify-content : center;
+}
+
+.en-font {
+  letter-spacing: 0.15em;
+  font-style: bold;
+  font-family: 'Poiret One','メイリオ',Meiryo,cursive;
+}
+
+#footer {
+  font-size: x-small;
+  letter-spacing: 0.15em;
+	color: black;
+  margin-bottom: 30px;
+}
+#footer a {
+	color: black;
+  text-decoration: none;
+}
+
+.my-border {
+  border-top: 1px dotted #5f5f5f;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.menu-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px dotted darkblue;
+}
+
+.menu-box h2 {
+  margin: 10px;
+  font-size: large;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
+.menu-box a {
+  text-decoration: none;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  text-indent:-999px;
+  -moz-transition: all 0.2s linear 0;
+  -webkit-transition: all 0.2s linear 0;
+  background-color: white;
+  filter:alpha(opacity=15);
+  -moz-opacity: 0.15;
+  opacity: 0.15;
+}
+.menu-box a:hover {
+  background-color: cornflowerblue;
+  filter:alpha(opacity=20);
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+}
+.menu-box p {
+  font-size: small;
+}
+
+#about h2 {
+  letter-spacing: 0.1em;
+  font-size: large;
+  border-color: #4d4d4d;
+  border-left-style: inherit;
+  border-left-width: medium;
+  border-bottom-style: dashed;
+  border-bottom-width: thin;
+  padding: 0px 0px 6px 15px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding-bottom: 0px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: solid 3px rgb(255, 255, 255);
+  box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.3);
+}
+
+.twitter-box {
+  padding: 5px;
+  box-shadow: 0px 0px 1px 2px rgba(0,0,0,0.2);
+  margin: -10px 0px -20px;
+}
+
+.mobile-title a {
+  font-size: large;
+  color: black;
+  text-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+}
